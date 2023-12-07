@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 250vh;
+            background-repeat:no-repeat;
+            background-position: center;
+            background-attachment:scroll;
+            overflow-y:scroll;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var pic=new Array;
+        pic[0]='image/bd1d74187077c6ff724d8ecb2b79e5b.jpg';
+        pic[1]='image/8eac14dbee652c8a3ea27feae02521d.jpg';
+        pic[2]='image/290d93f7a48f575db9a68c1c6646e0d.jpg';
+        pic[3]='image/8fbfe63dea058cfee07de7cbcd399b3.jpg';
+        parseInt(Math.random()*(pic.length),10);
+        var choose=Math.floor(Math.random()*(pic.length));
+        document.write('<img src="'+pic[choose]+'">');
+    </script>
+    <a href="#" onclick="history.go(-1); return false;">返回</a>
+</body>
+</html>
